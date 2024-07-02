@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- =========================== -->
+
+    <title>報稅 tax 綜合所得稅申報</title>
+    <link rel="icon" type="image/png" href="https://i.ibb.co/MsV6ZW2/tax.png" />
+
+    <script>
+        let url = "https://efile.tax.nat.gov.tw/"
+        window.onload = function () {
+            checkLocalStorage(url)
+        }
+
+        function handleClick() {
+            localStorage.setItem("visited-" + url, "yes"); // 3 years
+            window.location.href = url;
+        }
+    </script>
+
+    <!-- =========================== -->
+
+    <script type="text/javascript" src="https://l.pulipuli.info/app/script.js"></script>
+    <link rel="stylesheet" href="https://l.pulipuli.info/app/style.css" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <a id="link" href="#" style="display:none;" onclick="handleClick()">Go</a>
+</body>
+</html>
