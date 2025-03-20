@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- =========================== -->
+
+    <title>Tailscale</title>
+    <link rel="icon" type="image/png" href="https://blogger.googleusercontent.com/img/a/AVvXsEhm093JvwRpKYA3RUK7sJoAN4xi8AMtgLozPXBgHjX_pO7bNt3kMf5vxd_BUaKNwJ3c25sAXdjKFrtP_nu5xe9Y_mDHa174uPAYQWpncis_jSo5uOwvWHVEaEUTonSOKsYGRSPVy9g0SkAJuNRa0Oc8klMaBYCUM-9ryeaSIHZVxf8zP-9vdpOxcA" />
+
+    <script>
+        // let url = "https://rb.gy/f7njeo?u=f98b1444-5a25-4fba-9206-dba825532366"
+        let url = "https://login.tailscale.com/admin/machines"
+        window.onload = function () {
+            checkLocalStorage(url)
+        }
+
+        function handleClick() {
+            localStorage.setItem("visited-" + url, "yes"); // 3 years
+            window.location.href = url;
+        }
+    </script>
+
+    <!-- =========================== -->
+
+    <script type="text/javascript" src="https://l.pulipuli.info/app/script.js"></script>
+    <link rel="stylesheet" href="https://l.pulipuli.info/app/style.css" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <a id="link" href="#" style="display:none;" onclick="handleClick()">Go</a>
+</body>
+</html>
