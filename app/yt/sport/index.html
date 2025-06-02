@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- =========================== -->
+
+    <title>Workout Sport - YouTube</title>
+    <link rel="icon" type="image/png" href="https://blogger.googleusercontent.com/img/a/AVvXsEhXun25rnQnqwIuZuDBQG8btz_CpKWg6Xtrt_ZXPflXNCyZhKu0LcOaGAOKKpFdnFQaTZKIMbUhMWmmsRHH02zzbkqVksVjhPUSPQOkk3uLFGJK68SL2jXrwq0pZTTSbxjgqNMEHKmMWhu6v29sNxJ9Ky9LHCSImWG3MALFFKpCUh1wUOAbT68" />
+
+    <script>
+        // let url = "https://rb.gy/f7njeo?u=f98b1444-5a25-4fba-9206-dba825532366"
+        let url = "https://www.youtube.com/playlist?list=PLKnvkZ00-pHodY9I44Hx68xqhbDCPKMwh"
+        window.onload = function () {
+            checkLocalStorage(url)
+        }
+
+        function handleClick() {
+            localStorage.setItem("visited-" + url, "yes"); // 3 years
+            window.location.href = url;
+        }
+    </script>
+
+    <!-- =========================== -->
+
+    <script type="text/javascript" src="https://l.pulipuli.info/app/script.js"></script>
+    <link rel="stylesheet" href="https://l.pulipuli.info/app/style.css" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <a id="link" href="#" style="display:none;" onclick="handleClick()">Go</a>
+</body>
+</html>
