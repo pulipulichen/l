@@ -18,8 +18,4 @@ function resetLocalStorage() {
       i--;
     }
   }
-
-  // 顯示連結（原本邏輯）
-  document.getElementById("link").style.display = "block";
-  document.getElementById("link").innerText = url;
 }
