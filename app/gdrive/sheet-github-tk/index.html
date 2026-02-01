@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- =========================== -->
+
+    <title>GitHub AK - GSheet</title>
+    <link rel="icon" type="image/png" href="icon.png" />
+
+    <script>
+        let url = "https://docs.google.com/spreadsheets/d/1ri4v_JeQSTE5io1SLt6wM8_5UedsD5lqAaqRz3FLpyA/edit?gid=0#gid=0"
+        window.onload = function () {
+            checkLocalStorage(url)
+        }
+
+        function handleClick() {
+            localStorage.setItem("visited-" + url, "yes"); // 3 years
+            window.location.href = url;
+        }
+    </script>
+
+    <!-- =========================== -->
+
+    <script type="text/javascript" src="https://l.pulipuli.info/app/script.js"></script>
+    <link rel="stylesheet" href="https://l.pulipuli.info/app/style.css" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <a id="link" href="#" style="display:none;" onclick="handleClick()">Go</a>
+</body>
+</html>
