@@ -18,4 +18,5 @@ function resetLocalStorage() {
       i--;
     }
   }
+  alert('Reset Finish')
 }
