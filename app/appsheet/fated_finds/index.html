@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- =========================== -->
+
+    <title>Gmail Filter Download - Gmail</title>
+    <link rel="icon" type="image/png" href="icon.png" />
+
+    <script>
+        let url = "https://www.appsheet.com/start/f41fe03c-51e1-4105-85c8-f0ff0ef91fa5?platform=desktop#appName=FatedFinds-1274676&vss=H4sIAAAAAAAAA6WOMQ7CMBAE_7K1X-AWUSAEDYgGU5j4Ilk4dhQ7QGS5oKTmFTwM8Q0cAqKOKG9Os7sRR02nVZDFAXwbf9ecOnBEgXVXkwAXmDgbGmcEmMBSVgN8Xu-P20UgIe3Y1w7kweMYmf_TzKAV2aBLTU2f1Hs54WPld-9kMBhIDFUb5N7Qe2o2UsqsdEXrSW3yjNH1fman51patXAqB5bSeEovtXRJyVsBAAA=&view=%E7%89%A9%E5%93%81"
+        window.onload = function () {
+            checkLocalStorage(url)
+        }
+
+        function handleClick() {
+            localStorage.setItem("visited-" + url, "yes"); // 3 years
+            window.location.href = url;
+        }
+    </script>
+
+    <!-- =========================== -->
+
+    <script type="text/javascript" src="https://l.pulipuli.info/app/script.js"></script>
+    <link rel="stylesheet" href="https://l.pulipuli.info/app/style.css" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <a id="link" href="#" style="display:none;" onclick="handleClick()">Go</a>
+</body>
+</html>
