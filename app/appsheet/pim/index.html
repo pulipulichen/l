@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- =========================== -->
+
+    <title>PIM - AppSheet</title>
+    <link rel="icon" type="image/png" href="icon.png" />
+
+    <script>
+        let url = "https://www.appsheet.com/start/7f312f5c-d65f-4b57-ba99-be4b2c22b373?platform=desktop#appName=PIM-1274676&vss=H4sIAAAAAAAAA51RPU_DMBT8L2_OVCSQPEIQqlABUdQlrpCJXyoLx478Qami_A4WJCYkNkYWfk_hZ_CcFsHAQLPZ57t7d34t3ClcToMob4EV7c_tFFfAoOVwtWqQA-NwZE1wVnPIOJyJegNejCccOuiyQdLrHINQuneYZ98OAT2w9t-z2eDUGSiJJqhKoUs2SUTyrYSek4AAolNDqGMQNxr7hETvCNqx5LCovwx2SLxV_REcLu1yM_1gtC_2RqIk4YmzsTkksKBFTK0L_bklax1rQ9yPt5fP99f1w_P68Yn4506mCJCjL9FIZRb9CnOsRNRhJnRMWyzmXfqmypbRo5xR90Gd_dgc3zfCyImV1KAS2mP3BfkobKG7AgAA&row=726a32ac&view=PIM_Detail"
+        window.onload = function () {
+            checkLocalStorage(url)
+        }
+
+        function handleClick() {
+            localStorage.setItem("visited-" + url, "yes"); // 3 years
+            window.location.href = url;
+        }
+    </script>
+
+    <!-- =========================== -->
+
+    <script type="text/javascript" src="https://l.pulipuli.info/app/script.js"></script>
+    <link rel="stylesheet" href="https://l.pulipuli.info/app/style.css" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <a id="link" href="#" style="display:none;" onclick="handleClick()">Go</a>
+</body>
+</html>
