@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- =========================== -->
+
+    <title>MIS Mobile Inventory Scanner - ChatGPT</title>
+    <link rel="icon" type="image/png" href="icon.png" />
+
+    <script>
+        let url = "https://chatgpt.com/g/g-p-6a92a394b1d481918b66e3061b0625b4-20260829-zhuan-an-qrcodepan-dian/project"
+        window.onload = function () {
+            checkLocalStorage(url)
+        }
+
+        function handleClick() {
+            localStorage.setItem("visited-" + url, "yes"); // 3 years
+            window.location.href = url;
+        }
+    </script>
+
+    <!-- =========================== -->
+
+    <script type="text/javascript" src="https://l.pulipuli.info/app/script.js"></script>
+    <link rel="stylesheet" href="https://l.pulipuli.info/app/style.css" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <a id="link" href="#" style="display:none;" onclick="handleClick()">Go</a>
+</body>
+</html>
